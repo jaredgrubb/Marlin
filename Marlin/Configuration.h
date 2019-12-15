@@ -71,7 +71,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(thisiskeithb, Ender-3)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(none, default config)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -89,10 +89,10 @@
 #define SHOW_BOOTSCREEN
 
 // Show the bitmap in Marlin/_Bootscreen.h on startup.
-#define SHOW_CUSTOM_BOOTSCREEN
+//#define SHOW_CUSTOM_BOOTSCREEN
 
 // Show the bitmap in Marlin/_Statusscreen.h on the status screen.
-#define CUSTOM_STATUS_SCREEN_IMAGE
+//#define CUSTOM_STATUS_SCREEN_IMAGE
 
 // @section machine
 
@@ -134,7 +134,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Ender-3"
+//#define CUSTOM_MACHINE_NAME "3D Printer"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
@@ -330,9 +330,9 @@
   //#define PSU_DEFAULT_OFF         // Keep power off until enabled directly with M80
   //#define PSU_POWERUP_DELAY 100   // (ms) Delay for the PSU to warm up to full power
 
-  //#define AUTO_POWER_CONTROL  // Enable automatic control of the PS_ON pin
+  //#define AUTO_POWER_CONTROL      // Enable automatic control of the PS_ON pin
   #if ENABLED(AUTO_POWER_CONTROL)
-    #define AUTO_POWER_FANS           // Turn on PSU if fans need power
+    #define AUTO_POWER_FANS         // Turn on PSU if fans need power
     #define AUTO_POWER_E_FANS
     #define AUTO_POWER_CONTROLLERFAN
     #define AUTO_POWER_CHAMBER_FAN
@@ -1622,7 +1622,7 @@
  * you must uncomment the following option or it won't work.
  *
  */
-#define SDSUPPORT
+//#define SDSUPPORT
 
 /**
  * SD CARD: SPI SPEED
@@ -1710,7 +1710,7 @@
 // If you have a speaker that can produce tones, enable it here.
 // By default Marlin assumes you have a buzzer with a fixed frequency.
 //
-#define SPEAKER
+//#define SPEAKER
 
 //
 // The duration and frequency for the UI feedback sound.
